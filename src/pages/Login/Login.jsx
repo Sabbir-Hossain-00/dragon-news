@@ -13,7 +13,6 @@ export const Login = ()=>{
         e.preventDefault();
 
         signInUser(email , password).then((result)=>{
-          console.log(result)
             navigate(location.state || '/')
         }).catch((error)=>console.log(error))
     }

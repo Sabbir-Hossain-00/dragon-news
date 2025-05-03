@@ -15,7 +15,7 @@ export const Navbar = ()=>{
 
     const handleLogOut = ()=>{
       signOutUser().then(()=>{
-        console.log("sign out successfully")
+      
       }).catch((error)=>console.log(error))
     }
     return(

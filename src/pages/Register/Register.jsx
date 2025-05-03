@@ -22,7 +22,7 @@ export const Register = ()=>{
         e.preventDefault();
 
         createUser(inputValue.email , inputValue.password).then((result)=>{
-            console.log(result)
+           
             updateUserProfile({displayName:inputValue.name , photoURL: inputValue.photo}).then(()=>{
                 navigate("/")
             }).catch((error)=>console.log(error.message))

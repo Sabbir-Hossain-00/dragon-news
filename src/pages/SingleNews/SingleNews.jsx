@@ -6,7 +6,6 @@ export const SingleNews = () => {
   const data = useLoaderData();
   const { id } = useParams();
   const location = useLocation();
-  console.log(location)
   useEffect(() => {
     const findedData = data.find((singleData) => singleData.id == id);
     setNews(findedData);
